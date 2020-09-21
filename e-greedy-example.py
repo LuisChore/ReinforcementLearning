@@ -6,7 +6,7 @@ using Multi-Armed Bandit analogy
 import matplotlib.pyplot as plt
 import numpy as np
 
-BANDIT_PROBABILITIES = [0.20,0.75,0.50]
+BANDIT_PROBABILITIES = [0.20,0.75,0.50] #real probabilities
 TOTAL_TRIALS = 10000
 EPSILON = 0.1
 ALPHA = 0.99999
@@ -78,8 +78,8 @@ def run_experiment(epsilon,decaying_epsilon = False):
     return win_rates
 
 if __name__ == "__main__":
-    # Comparing different epsions
-    # Higuer epsilon (Quick Conversion)
+    # Comparing different epsilons
+    # Higher epsilon (Quick Conversion)
     # Lower epsilon (Higuer Eventual Reward)
     e1 = run_experiment(0.1)
     e2 = run_experiment(0.05)
